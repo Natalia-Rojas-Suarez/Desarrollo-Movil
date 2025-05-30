@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5E7B9D</color>          <color name="colorOnPrimary">#FFFFFF</color>         <color name="colorSecondary">#81D4FA</color>        <color name="colorOnSecondary">#000000</color>       <color name="colorSurface">#121212</color>           <color name="colorOnSurface">#FFFFFF</color>         <color name="colorError">#CF6679</color>             <color name="colorOnError">#000000</color>           <color name="textColorPrimary">#FFFFFF</color>   <color name="textColorSecondary">#AAAAAA</color> <color name="dividerColor">#424242</color>       <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="cardBackgroundColor">#1E1E1E</color>  <color name="backgroundColor">#212121</color>      <color name="colorFuente">#E0E0E0</color>         <color name="botonRojo">#E57373</color>            <color name="botonAzul">#64B5F6</color>            <color name="bottom_nav_icon_color_night">#BBBBBB</color>  <color name="bottom_nav_text_color_night">#DDDDDD</color>  <color name="bottom_nav_background_night">#2C2C2C</color>  </resources>

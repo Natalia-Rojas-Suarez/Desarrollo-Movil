@@ -1,0 +1,264 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Caja de datos arriba -->
+    <LinearLayout
+        android:id="@+id/cajaDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_caja_datos"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Fila: Fecha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_calendar" />
+
+            <TextView
+                android:id="@+id/tvFechaDetalle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="25/04/25 - 09:45 AM"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Fila: Especialidad -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_therapy" />
+
+            <TextView
+                android:id="@+id/tvEspecialidadDetalle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Electroterapia"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Fila: Doctor -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_doctor" />
+
+            <TextView
+                android:id="@+id/tvDoctorDetalle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Cathalina Cañon"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Caja 1 -->
+
+        <!-- Caja 2 + Botón editar alineados horizontalmente -->
+
+        <LinearLayout
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_caja_azul"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Número de sesiones:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="261dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:text="8"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivEditarSesiones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_circulo_blanco"
+                    android:contentDescription="Editar descripción"
+                    android:elevation="4dp"
+                    android:src="@drawable/ic_edit" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_aviso_tratamiento"
+                    android:paddingStart="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingBottom="4dp"
+                    android:text="Ya casi terminas"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_tratamiento" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="end">
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_caja_azul"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    app:cardBackgroundColor="#90B1CF"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="false">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="¿Qué es la electroterapia?"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:lineSpacingExtra="4dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="20dp"
+        android:text="Es un tratamiento de fisioterapia que usa corrientes eléctricas de baja intensidad para aliviar el dolor, mejorar la circulación y estimular los músculos."
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+</ScrollView>
+
+            </LinearLayout>
+
+            <!-- FrameLayout ajustado para mover el icono más abajo -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:gravity="bottom|end">
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/ivEditarDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_circulo_blanco"
+                android:contentDescription="Editar descripción"
+                android:elevation="4dp"
+                android:paddingTop="150dp"
+                android:src="@drawable/ic_edit" />
+        </LinearLayout>
+
+</LinearLayout>
+
+    <!-- Botones abajo -->
+    <LinearLayout
+        android:id="@+id/llBotones"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/bg_botones_unidos"
+        android:gravity="center"
+        android:layout_marginTop="-35dp">
+
+        <Button
+            android:id="@+id/btnGuardarDescripcion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Guardar"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

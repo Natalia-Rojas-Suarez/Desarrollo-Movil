@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="FisioCare" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#5E7B9D</item> <item name="colorOnPrimary">#FFFFFF</item>
+    </style>
+
+    <style name="Base.Theme.Movildev" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#5E7B9D</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.Movildev" parent="Base.Theme.Movildev" />
+
+    <style name="BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_icon_color_night</item> <item name="itemTextColor">@color/bottom_nav_text_color_night</item> <item name="backgroundTint">@color/bottom_nav_background_night</item> <item name="itemActiveIndicatorStyle">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.TratamientosApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/sarala</item>
+    </style>
+
+</resources>

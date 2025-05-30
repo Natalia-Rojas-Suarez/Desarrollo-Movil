@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#395176</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="dividerColor">#E0E0E0</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="cardBackgroundColor">#D4E5F1</color>
+    <color name="backgroundColor">#E9EEF3</color>
+    <color name="colorFuente">#395176</color>
+    <color name="botonRojo">#D43E32</color>
+    <color name="botonAzul">#407CE2</color>
+
+    <color name="bottom_nav_icon_color">#395176</color>
+    <color name="bottom_nav_text_color">#395176</color>
+    <color name="bottom_nav_background">#D4E5F1</color>
+
+</resources>

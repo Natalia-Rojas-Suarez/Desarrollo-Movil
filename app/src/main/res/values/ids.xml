@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layout_interno" type="id" />
+    <item name="contenedor_tarjetas" type="id" />
+    <item name="back_icon" type="id" />
+    <item name="bottom_navigation" type="id" />
+    <item name="title_container" type="id" />
+    <item name="tvFechaDetalle" type="id" />
+    <item name="tvEspecialidadDetalle" type="id" />
+    <item name="tvDoctorDetalle" type="id" />
+    <item name="nav_historial" type="id" />
+    <item name="llCajaDescripcion" type="id" />
+</resources>
