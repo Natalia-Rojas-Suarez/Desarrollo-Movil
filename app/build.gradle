@@ -1,0 +1,76 @@
+// app/build.gradle - ESTE ES EL ARCHIVO EN LA CARPETA 'app'
+
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    // APLICA EL PLUGIN DE COMPOSE COMPILER AQUÍ
+    alias(libs.plugins.compose.compiler)
+
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.movildev'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.movildev"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        // ¡ELIMINA ESTA LÍNEA! Ya no es necesaria con el plugin de Compose Compiler en Kotlin 2.0+
+        // kotlinCompilerExtensionVersion '1.5.0'
+    }
+}
+
+dependencies {
+    // ... Tus dependencias ...
+
+    // BOM de Compose
+    // Nota: Para Kotlin 2.0.21, el BOM de Compose 2024.05.00 puede ser un poco antiguo.
+    // Revisa si hay uno más reciente que sea compatible con tu versión de Kotlin.
+    // Sin embargo, por ahora mantenemos este para evitar más cambios.
+    implementation platform('androidx.compose:compose-bom:2024.05.00')
+
+    // Dependencias de Compose sin versión
+    implementation 'androidx.compose.ui:ui'
+    implementation 'androidx.compose.ui:ui-graphics'
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.androidx.navigation.fragment
+    implementation libs.androidx.room.common.jvm
+    implementation libs.androidx.room.runtime.android
+    implementation libs.navigation.ui.ktx
+    implementation libs.firebase.database.ktx
+    implementation libs.androidx.monitor
+    implementation libs.androidx.junit.ktx
+    debugImplementation 'androidx.compose.ui:ui-tooling'
+    debugImplementation 'androidx.compose.ui:ui-test-manifest'
+    implementation 'androidx.compose.material3:material3'
+    implementation 'androidx.compose.runtime:runtime'
+    implementation 'androidx.activity:activity-compose:1.9.0'
+}

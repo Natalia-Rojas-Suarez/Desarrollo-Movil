@@ -1,0 +1,16 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Fondo blanco -->
+    <corners android:radius="16dp" /> <!-- Bordes redondeados -->
+
+    <!-- Línea sombreada en la parte inferior -->
+    <stroke
+        android:color="#B0B0B0"
+    android:width="1dp" /> <!-- Grosor de la línea sombreada -->
+
+    <!-- Sombra suave en la parte inferior -->
+    <gradient
+        android:angle="270"
+        android:startColor="#E0E0E0"
+    android:endColor="#FFFFFF"
+    android:type="linear" />
+</shape>

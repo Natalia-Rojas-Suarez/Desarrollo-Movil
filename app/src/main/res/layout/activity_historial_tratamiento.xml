@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" android:background="@drawable/bg_caja_datos"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_therapy" />
+
+                <TextView
+                    android:id="@+id/tvEspecialidadDetalle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Electroterapia"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="95dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_caja_historial"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="71dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_session" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvSesion1Titulo" android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Se agregaron 5 sesiones"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvSesion1Fecha" android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="31/03/25 | 01:50 PM"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="95dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_caja_historial"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="71dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_session" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvSesion2Titulo" android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Se agregaron 10 sesiones"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvSesion2Fecha" android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="01/04/25 | 10:30 AM"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="95dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/bg_caja_historial"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="71dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_session" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvSesion3Titulo" android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Se agregaron 10 sesiones"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvSesion3Fecha" android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="02/04/25 | 11:20 AM"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBotones"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="@drawable/bg_botones_unidos"
+            android:gravity="center"
+            android:layout_marginTop="-20dp">
+
+            <Button
+                android:id="@+id/btnVolverTratamientos"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/transparent"
+                android:text="Regresar a Tratamientos"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
